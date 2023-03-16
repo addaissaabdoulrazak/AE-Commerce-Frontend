@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Rubik Iso', cursive;
+}
+
+/* rappel : pour centrer un element nous avons besoin de definir d'avance ou specifier
+             la largeur max de l'element dabord d'ou le rôle de la classe 
+           << my-container >> on remarque l'utilisation de << mx-auto >> 
+           qui sont des attribut servant a centrer un element .
+*/
+.my-container{
+    max-width: 1500px;
+        /* max-width: 75%; */
+}
+
+.my-shadow{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.my-rounded-corner{
+    border-radius: 1rem; 
+}

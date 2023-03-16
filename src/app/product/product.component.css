@@ -1,0 +1,25 @@
+/*------------------------------------------------*/
+.debug{
+    border: solid 10px red;
+}
+ /* *,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+ } */
+/*------------------------------------------------*/
+
+/* allows you to select a custom element from inside its shadow DOM. */
+:host{
+    display: block;
+    overflow: hidden;
+    height:max-content;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0.75rem rgba(0,0,0,0.3);
+    transition: transform 200ms ease-in-out;
+ 
+}
+
+:host:hover{
+    transform: scale(1.03);
+}

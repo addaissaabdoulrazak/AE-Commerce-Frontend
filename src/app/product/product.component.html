@@ -1,0 +1,100 @@
+<!-- create a grid-view -->
+<div class="grid-view" *ngIf="view=='grid'">
+
+<div class="card text-center">
+  <!-- Here, we will use .fw-bold class to make a bold text. -->
+  <!-- font-weight: bold; (fw-b) and fs-5 is equivalent of font-size:5px;-->
+    <div class="card-header fw-bold fs-5">
+      Header
+    </div>
+     
+    <!-- image container between card-header and card-body (my-2) allows to define both margin-top ang margin bottom -->
+     <div>
+      <!-- img-fluid works by making the image cover 100% width of the parent element (max-width: 100%;) and having its height scale automatically (height: auto;) 
+           in relation to the image width. -->
+      <img class="overflow-hidden d-flex  justify-content-center align-items-center card-img-top"  src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" > 
+     
+     </div>
+
+     <!-- End image item -->
+  
+    <div class="card-body">
+
+      <h5 class="card-title">Title</h5>
+      <!-- x - for classes that set both *-left and *-right (Abscissa)
+           y - for classes that set both *-top and *-bottom (orderly) -->
+      <h6 class="card-subtitle my-2 text-primary">12 produits are available</h6>
+      <p class="card-text Description">Text</p>
+
+    </div>
+
+    <div class="card-body">
+
+        <h5 class="card-title text-success">final price <span class="text-primary"> -20¨%</span> </h5>
+
+        <h6 class="card-subtitle text-danger text-decoration-line-through ">Original Price</h6>
+    </div>
+
+     <!-- explanation : 'd-grid' adds the CSS property 'display: grid' -->
+     <!-- When using display: grid, you can make use of gap utilities on the parent grid container. 
+        This can save on having to add margin utilities to individual grid items -->
+    <div  class="card-footer d-grid gap-2">
+    <button type="button" class="btn btn-outline-success">Add To Card</button>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- create a list-view -->
+<div class="list-view" *ngIf="view=='list'">
+ <div class="card">
+  
+  <!-- we will use row,col systèm, because we want to display elements side by side(next to each other) -->
+    
+  <!--  --row--    -->
+   <div class="row">
+      
+     <!-- --First col-- -->
+    <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
+          <img src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" class="img-fluid rounded-stard">
+    </div>
+    
+      <!-- --second col-- -->
+    <div class="col">
+
+         <!-- header -->
+      <div class="card-header text-center">
+            Header
+      </div>
+        
+        <!-- body for description -->
+      <div class="card-body">
+        <div class="card-title title">Title</div>
+        <p class="card-text description">Description</p>
+        <h6 class="card-subtitle mb-3 text-primary"> 11 products are available</h6>
+      </div>
+       
+      <!-- Body for promotion -->
+      <div class="card-body">
+        <h4 class="card-title text-muted">
+          Pricing
+        </h4>
+        <h2 class="card-title text-success">final price<span class="text-primary"> -20¨%</span> </h2>
+        <h5 class="card-subtitle text-danger text-decoration-line-through ">Original Price</h5>
+      </div>
+         
+      <!-- Footer using grid css système-->
+      <div  class="card-footer text-muted  d-grid gap-2">
+        <button type="button" class="btn btn-outline-success">Add To Card</button>
+      </div>
+
+    </div>
+
+
+
+  </div>
+ </div>
+
+</div>
