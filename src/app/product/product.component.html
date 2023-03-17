@@ -1,6 +1,6 @@
-<!-- create a grid-view -->
-<div class="grid-view" *ngIf="view=='grid'">
+<!-- --------------------------------------------Partie 1: [create a grid-view]-------------------------------------------------- -->
 
+<div class="grid-view" *ngIf="view=='grid'">
 <div class="card text-center">
   <!-- Here, we will use .fw-bold class to make a bold text. -->
   <!-- font-weight: bold; (fw-b) and fs-5 is equivalent of font-size:5px;-->
@@ -38,6 +38,7 @@
      <!-- explanation : 'd-grid' adds the CSS property 'display: grid' -->
      <!-- When using display: grid, you can make use of gap utilities on the parent grid container. 
         This can save on having to add margin utilities to individual grid items -->
+             <!-- NB : << gap-* >> => ecart entre les colonne  -->
     <div  class="card-footer d-grid gap-2">
     <button type="button" class="btn btn-outline-success">Add To Card</button>
     </div>
@@ -47,7 +48,7 @@
 
 </div>
 
-<!-- create a list-view -->
+<!-- -----------------------------------------------------Partie 2 : [create a list-view]------------------------------------------------ -->
 
 <div class="list-view" *ngIf="view=='list'">
 
@@ -57,12 +58,14 @@
   <!--  --row--    -->
    <div class="row">
       
-     <!-- --First col-- -->
+     <!-- ----------------[First col]----------- -->
+         <!-- on accorde a l'image un nombre de colonne bien specifique -->
     <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
           <img src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" class="img-fluid rounded-stard">
     </div>
     
-      <!-- --second col-- -->
+      <!-- ---------------[second col]---------- -->
+         <!-- on va deleger le reste de colonne a la description du produit -->
     <div class="col d-flex flex-column">
 
          <!-- header -->
@@ -87,14 +90,11 @@
       </div>
          
       <!-- Footer using grid css système-->
+           <!-- << gap-* >> => ecart entre les colonne  -->
       <div  class="card-footer text-muted  d-grid gap-2">
         <button type="button" class="btn btn-outline-success">Add To Card</button>
       </div>
-
     </div>
-
-
-
   </div>
  </div>
 
