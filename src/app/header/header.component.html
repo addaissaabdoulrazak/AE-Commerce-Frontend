@@ -1,0 +1,43 @@
+<header class="w-100 h-100 bg-dark px-4 my-shadow d-flex justify-content-around">
+    <div class="text-light fs-2 fw-bold fst-italic">
+        <span>Shopping Point</span>
+    </div>
+
+    <div class="btn-toolbar" role="toolbar">
+        
+        <div class="btn-group btn-group-lg me-3" role="group">
+           <div type="button" class="btn btn-outline-light">Home</div>
+        </div>
+        <div class="btn-group btn-group-lg me-2" role="group">
+         <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Categries</button>
+          <ul class="dropdown-menu fs-5">
+             <ng-container *ngFor="let item of navigationList; let i=index;">
+                    <!-- show category -->
+                <li class="text-center fw-bold">{{item.category |titlecase}}</li>
+                
+                    <!-- show subcategories -->
+                <li *ngFor="let subcategory of item.subcategories" [style.cursor] ="'pointer'">
+                    <a class="dropdown-item">
+                        {{subcategory | titlecase}}
+                    </a>
+                </li>
+
+                <!-- la technique appliquer ici est que la longueur de 2 item egale 2
+                cependant l'index lui commence a partir de Zero en programmation donc .. -->
+                <li *ngIf="i!=navigationList.length-1">
+                    <hr class="dropdow-divider">
+                </li>
+
+            </ng-container>
+          </ul>
+        </div>
+        <div class="btn-group btn-group-lg me-2" role="group">
+            <button type="button " class="btn btn-outline-light">Login</button>
+            <button type="button " class="btn btn-outline-light">Register</button>
+            <button type="button " class="btn btn-outline-light">Accout</button>
+            <button type="button " class="btn btn-outline-light">Cart</button>
+            <button type="button " class="btn btn-outline-light">Order</button>
+            <button type="button " class="btn btn-outline-light">Log-Out</button>
+        </div>
+    </div>
+</header>
