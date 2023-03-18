@@ -99,3 +99,44 @@
  </div>
 
 </div>
+
+<!-- ------------------------------------------------------Partie 3 : [cart Item View]------------------------------------------------ -->
+<div class="cart-item-view" *ngIf="view=='currentCartItem'">
+    <div class="card">
+      <div class="row g-0">
+        
+          <!-- [col-1] -->
+        <div class="col-4 overflow-hidden d-flex justify-content-center align-items-center">
+             <img src="../../assets/Images/mobiles/10/1.jpg" alt="Product Image" class="img-fluid rounded-stard">
+        </div>
+         
+        <!-- [col-2] -->
+        <div class="col-8">
+          <h5 class="card-title title"> title</h5>
+          <h5 class="card-title text-success">Final Price
+            <span class="text-primary">$ 11 Products are available</span>
+          </h5>
+          <h6 class="card-subtitle text-danger text-decoration-line-through">Original Price</h6>
+         </div>
+
+         <div class="card-footer text-muted d-grid gap-2">
+          <button class="btn btn-outline-danger">Remove from Cart</button>
+         </div>
+      </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------------Partie 4  : [ Preview cart Item ]------------------------------------------------ -->
+<div class="cart-item-view" *ngIf="view=='previewCartItem'">
+  
+  <div class="card text-center">
+
+        <div class="overflow-hidden d-flex justify-content-center align-items-center">
+          <img src="../../assets/Images/mobiles/10/1.jpg" alt="" class="card-img-top">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title title">Title</h5>
+        </div>
+  </div>
+</div>
