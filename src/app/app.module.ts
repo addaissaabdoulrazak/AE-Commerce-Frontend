@@ -11,6 +11,7 @@ import { ProduitDetailsComponent } from './produit-details/produit-details.compo
 import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { OrderComponent } from './order/order.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
