@@ -10,7 +10,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProduitDetailsComponent } from './produit-details/produit-details.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { OrderComponent } from './order/order.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

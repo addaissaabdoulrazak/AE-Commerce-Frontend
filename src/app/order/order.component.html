@@ -41,10 +41,12 @@
         <h4 class="w-25 border border-secondary text-center py-2 my-rounded-corner">Payment Method</h4>
         <div class="d-flex justify-content-center align-item-center">
             <h5 class="me-4">Select any Metod</h5>
-            <select class="form-select w-25">
+
+            <select class="form-select w-25" [formControl]="selectedPaymentMethod">
                 <option value="0">Open this select menu</option>
-                <option *ngFor="let paymentMethod of [1,2,3]" value="{{paymentMethod}}"> option</option>
+                <option *ngFor="let paymentMethod of [1,2,3]" value="{{paymentMethod}}">option</option>
             </select>
+
         </div>
     </section>
 
@@ -53,7 +55,7 @@
       le tableau s'affiche -->
     <section class="m-3 p-4 border border-dark my-rounded-corner">
         <h4 class="w-25 border border-secondary text-center py-2 my-rounded-corner">Proceed to Payments</h4>
-        <div class="mt-4 w-50" *ngIf="selectPaymentMethodName !=''">
+        <div class="mt-4 w-50" *ngIf="selectedPaymentMethodName !='' ">
            <table class="table table-bordered my-shadow">
                 <thead>
                     <tr>
@@ -88,6 +90,7 @@
            <div class="d-grid w-50">
                 <button class="type btn btn-outline-success mb-4">Pay</button>            
            </div>
+           <!-- spinner -->
            <div class="processing">
                <div class="spinner-border me-4" role="status">
                 <span class="visually-hidden">Loading...</span>
