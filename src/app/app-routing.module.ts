@@ -5,13 +5,14 @@ import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
     path:'home', component: HomeComponent
   },
   {
-    path:'products', component: ProductComponent
+    path:'products', component: ProductsComponent
   },
   {
     path:'product-details', component: ProductComponent

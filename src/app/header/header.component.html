@@ -12,15 +12,24 @@
         <div class="btn-group btn-group-lg me-2" role="group">
          <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Categries</button>
           <ul class="dropdown-menu fs-5">
+             
+                <!-- [NavigationItem] est une classe Model qui aura la responsabilit de gerer
+                l'affichage des categories et des produit qui leurs sont associer -->
              <ng-container *ngFor="let item of navigationList; let i=index;">
                     <!-- show category -->
-                <li class="text-center fw-bold">{{item.category |titlecase}}</li>
+                    <!-- 'titlecase' pipe '|' and use to changes the first letter of each word into the uppercase. -->
+                <li class="text-center fw-bold">{{item.category | titlecase}}</li>
                 
                     <!-- show subcategories -->
                 <li *ngFor="let subcategory of item.subcategories" [style.cursor] ="'pointer'">
-                    <a class="dropdown-item">
+                         
+                    
+                    <!-- A revoir pour afficher et obtenir le(s) Produits d'une categorie Specifique -->
+                        <!-- [OpenProducts il s'agit d'une directive qui a été ajouté grâce a (ng) afin de gerer la navigation coté route] -->
+                    <a class="dropdown-item" OpenProducts [category]="{id:0, 'category': item.category, 'subcategory': subcategory}">
                         {{subcategory | titlecase}}
                     </a>
+
                 </li>
 
                 <!-- la technique appliquer ici est que la longueur de 2 item egale 2

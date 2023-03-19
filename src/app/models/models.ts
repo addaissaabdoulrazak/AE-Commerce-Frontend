@@ -13,6 +13,6 @@ export interface SuggestedProduct{
 //nous allons creer une Classe Specialement pour les listes Déroulante
 
 export class NavigationItem{
-    category : string | undefined;
-    subcategories :string[] | undefined;
+    category! : string;
+    subcategories!:string[];
 }
