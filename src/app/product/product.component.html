@@ -4,7 +4,7 @@
 <div class="card text-center">
   <!-- Here, we will use .fw-bold class to make a bold text. -->
   <!-- font-weight: bold; (fw-b) and fs-5 is equivalent of font-size:5px;-->
-    <div class="card-header fw-bold fs-5">
+    <div class="card-header fw-bold fs-5 text-success">
       Header
     </div>
      
@@ -12,7 +12,8 @@
      <div>
       <!-- img-fluid works by making the image cover 100% width of the parent element (max-width: 100%;) and having its height scale automatically (height: auto;) 
            in relation to the image width. -->
-      <img class="overflow-hidden d-flex  justify-content-center align-items-center card-img-top"  src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" > 
+      <img class="overflow-hidden d-flex  justify-content-center align-items-center card-img-top"  src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image"
+      OpenProductDetails [productId]="1"/> 
      
      </div>
 
@@ -61,7 +62,7 @@
      <!-- ----------------[First col]----------- -->
          <!-- on accorde a l'image un nombre de colonne bien specifique -->
     <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
-          <img src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" class="img-fluid rounded-stard">
+          <img src="../../assets/Images/mobiles/10/1.jpg" alt="Produit Image" class="img-fluid rounded-stard" OpenProductDetails [productId]="1" />
     </div>
     
       <!-- ---------------[second col]---------- -->
@@ -107,7 +108,7 @@
         
           <!-- [col-1] -->
         <div class="col-4 overflow-hidden d-flex justify-content-center align-items-center">
-             <img src="../../assets/Images/mobiles/10/1.jpg" alt="Product Image" class="img-fluid rounded-stard">
+             <img src="../../assets/Images/mobiles/10/1.jpg" alt="Product Image" class="img-fluid rounded-stard" OpenProductDetails [productId]="1"/>
         </div>
          
         <!-- [col-2] -->
@@ -132,7 +133,7 @@
   <div class="card text-center">
 
         <div class="overflow-hidden d-flex justify-content-center align-items-center">
-          <img src="../../assets/Images/mobiles/10/1.jpg" alt="" class="card-img-top">
+          <img src="../../assets/Images/mobiles/10/1.jpg" alt="" class="card-img-top" OpenProductDetails [productId]="1"/>
         </div>
 
         <div class="card-body">
