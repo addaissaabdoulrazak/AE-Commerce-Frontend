@@ -1,0 +1,6 @@
+main{
+  margin-top: 4rem; /* why rem ??*/
+  padding: 1rem; /* why rem ??*/
+  min-height: calc(100vh - 8rem);  /* why ??*/
+  z-index:1; /* why ??*/
+}
