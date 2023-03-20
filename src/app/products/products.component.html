@@ -33,6 +33,7 @@
 
     <!-- Grid View -->
     <div class="grid-view" *ngIf=" view=='grid' ">
+
       <!-- nous allons utiliser le système row,col car nous voulons afficher les elements de manière juxtaposer(cote a cote)-->
       <!-- g-2 indique l'utilisation de grid css il permet de mettre de l'espace en ce qui concerne des items juxtaposer  -->
       <div class="row g-2">
@@ -40,7 +41,7 @@
         <div class="col-3" *ngFor="let product of [1,1,1,1,1]">
               <app-product></app-product>
         </div>
-     </div>
+      </div>
 
     </div>
 

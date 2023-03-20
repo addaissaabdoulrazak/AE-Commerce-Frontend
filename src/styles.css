@@ -21,3 +21,7 @@ body{
 .my-rounded-corner{
     border-radius: 1rem; 
 }
+
+.modal-backdrop.fade.show{  /*?? why does it work ?? try to inspect your page for yours  compreention*/
+    z-index:19;
+}
