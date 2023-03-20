@@ -1,1 +1,42 @@
-<p>login works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="col mb-3">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" placeholder="Email Address" id="email" formControlName="email"/>
+
+        <!-- Errors -->
+        <!-- 1 -->
+        <div class="form-text text-danger"
+        *ngIf="Email.errors?.['required'] && (Email.dirty || Email.touched)">
+            Email is required
+        </div>
+            <!-- 2 -->
+        <div class="form-text text-danger"
+        *ngIf="Email.errors?.['email'] && (Email.dirty || Email.touched)">
+            Email Invalid
+        </div>
+
+        <!-- End Errors management -->
+    </div>
+
+    <!-- ----------------------------[Password and repeat password]-------------------- -->
+    <div class="row">
+        <!-- ---------------------------------Password -->
+        <div class="col mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="password" id="pwd" formControlName="pwd">
+
+            <!-- Errors -->
+        <!-- 1 -->
+        <div class="form-text text-danger"
+        *ngIf="PWD.errors?.['required'] && (PWD.dirty || PWD.touched)">
+                Password is required
+        </div>
+            <!-- 2 -->
+        <div class="form-text text-danger"
+        *ngIf="PWD.errors?.['minlength'] && (PWD.dirty || PWD.touched)">
+            Password should be at least 6 and at the max 15 characters long
+        </div>
+        <!-- End Errors management -->
+        </div>
+    </div>
+</form>
