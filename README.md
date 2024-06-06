@@ -1,27 +1,52 @@
-# ECommerce
+# E-Commerce Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+E-Commerce Frontend is an Angular application developed to interact with the backend API of the e-commerce application. This application allows users to browse product categories, view product details, register, log in, and manage their shopping cart.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **Product Browsing and Search**
+- **User Management**
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend**: Angular
+- **Styling**: Bootstrap
+- **API Communication**: HTTPClient
 
-## Build
+## Angular Version
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project uses **Angular 12**. Ensure you have the correct version of Angular CLI installed before running the project.
 
-## Running unit tests
+## Project Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+- **src/app/components**: Contains Angular components.
+- **src/app/services**: Contains services for interacting with the backend API.
+- **src/app/models**: Contains data models used in the application.
+- **src/app/directives**: Contains custom Angular directives that enhance the functionality of HTML elements within the application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Instructions to Run the Project
 
-## Further help
+1. Clone the GitHub repository.
+   ```bash
+   git clone https://github.com/your-username/E-Commerce-Frontend.git
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Navigate to the project folder
+   ```bash
+   cd E-Commerce-Frontend
+
+3. Install project dependencies.
+   ```bash
+   npm install
+
+4. Configure the backend API URLs in the environment.ts file.
+5. Start the Angular application.
+    ```bash
+   ng serve
+
+6. Open your browser and go to http://localhost:4200.
+
+## Contributing
+Contributions are welcome. Please submit a pull request for any enhancements or bug fixes.
+   
+
