@@ -40,11 +40,12 @@ This project uses **Angular 12**. Ensure you have the correct version of Angular
    npm install
 
 4. Configure the backend API URLs in the environment.ts file.
+  
 5. Start the Angular application.
     ```bash
    ng serve
 
-6. Open your browser and go to http://localhost:4200.
+7. Open your browser and go to http://localhost:4200.
 
 ## Contributing
 Contributions are welcome. Please submit a pull request for any enhancements or bug fixes.
